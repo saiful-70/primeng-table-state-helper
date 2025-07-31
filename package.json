@@ -1,6 +1,6 @@
 {
   "name": "mtsl-primeng-table-state-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript utility library for PrimeNG table state management with filtering, sorting, and pagination in Angular applications",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
