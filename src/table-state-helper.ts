@@ -1,10 +1,12 @@
-import { HttpClient, HttpContext } from "@angular/common/http";
+import { HttpClient, HttpContext, HttpContextToken } from "@angular/common/http";
 import { Signal, signal } from "@angular/core";
 import { patchState, signalState } from "@ngrx/signals";
 import { FilterMetadata, SelectItem } from "primeng/api";
 import { Table, TableLazyLoadEvent } from "primeng/table";
 import { firstValueFrom } from "rxjs";
 import { z } from "zod";
+
+export const SkipLoadingSpinner = new HttpContextToken(() => false);
 
 /**
  * String filter types for PrimeNG table filtering
@@ -413,7 +415,7 @@ export class PrimeNgTableStateHelper<T> {
           this.dtoBuilder(),
           {
             params: { ...this.#queryParams },
-            context: httpContext
+            context: new HttpContext().set(SkipLoadingSpinner, true)
           }
         )
       );
