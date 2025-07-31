@@ -16,7 +16,7 @@ A TypeScript utility library for advanced PrimeNG table state management in Angu
 ## Installation
 
 ```bash
-npm install @mtsl/primeng-table-state-helper
+npm install mtsl-primeng-table-state-helper
 ```
 
 ## Peer Dependencies
@@ -38,7 +38,7 @@ npm install zod
 import { Component, inject, viewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Table } from 'primeng/table';
-import { PrimeNgTableStateHelper } from '@mtsl/primeng-table-state-helper';
+import { PrimeNgTableStateHelper } from 'mtsl-primeng-table-state-helper';
 
 interface User {
   id: number;
@@ -138,7 +138,7 @@ import {
   createDropdownColumn,
   mergeTableHeaders,
   createStatusSelectItems
-} from '@mtsl/primeng-table-state-helper';
+} from 'mtsl-primeng-table-state-helper';
 
 @Component({
   // ... component configuration
