@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * Example usage of mtsl-primeng-table-state-helper
+ * Example usage of primeng-table-state-helper
  * This file demonstrates how to use the PrimeNG table state helper
  * in an Angular component with lazy loading, filtering, and sorting.
  * 
@@ -21,7 +21,7 @@ import {
   createDropdownColumn,
   mergeTableHeaders,
   createStatusSelectItems
-} from 'mtsl-primeng-table-state-helper';
+} from 'primeng-table-state-helper';
 
 interface ProcessDataBankItem {
   id: number;
